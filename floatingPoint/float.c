@@ -130,7 +130,7 @@ static void printValue(int n)
 	else if (expBits == expMask) {		// infinity or NaN
 		if (fractBits == 0) {
 			printSpecialValue(signBit ? "-infinity" : "+infinity");
-			prevValue = inf;
+			prevValue = INFINITY;
 			}
 		else {
 			printSpecialValue(fractBits & leftBitMask ? "QNaN" : "SNaN");
